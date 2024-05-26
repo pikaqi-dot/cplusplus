@@ -6,6 +6,7 @@ struct Person {
     std::string name;
     int age;
 
+
     // 成员函数
     void introduce() {
         std::cout << "Hi, my name is " << name << " and I am " << age << " years old." << std::endl;
