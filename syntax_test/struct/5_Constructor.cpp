@@ -1,25 +1,21 @@
 #include <iostream>
 #include <string>
 
-// 定义一个表示人的struct
 struct Person {
     std::string name;
     int age;
-//sddfdf
 
-    // 成员函数
+    // 构造函数
+    Person(const std::string& n, int a) : name(n), age(a) {}
+
     void introduce() {
         std::cout << "Hi, my name is " << name << " and I am " << age << " years old." << std::endl;
     }
 };
 
 int main() {
-    // 创建一个Person对象
-    Person person;
-    person.name = "Alice";
-    person.age = 30;
-
-    // 调用成员函数
+    // 使用构造函数创建对象
+    Person person("Alice", 30);
     person.introduce();
 
     return 0;
